@@ -1,0 +1,35 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+:root {
+    --board-width: 30rem;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+.chess-table {
+    width: var(--board-width);
+    height: var(--board-width);
+    display: grid;
+    grid-template-columns: repeat(8, auto);
+    grid-template-rows: repeat(8, auto);
+}
+
+.peice-box {
+    border: 1px solid black;
+}
+
+.black-box {
+    background-color: brown;
+}
+
+.white-box {
+    background-color: lightgray;
+}
